@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BRW-2Y-eop">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -8,22 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second View Controller-->
-        <scene sceneID="N39-k6-X1J">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="LTn-vn-IKu" customClass="SecondViewController" customModule="Right_On_Target" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NoO-1v-Chk">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Xa9-rq-FTK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="w6z-uA-sg2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xmd-qh-ftD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-120" y="492"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -55,26 +39,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkT-sY-1qU">
-                                <rect key="frame" x="700" y="337" width="132" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="О программе"/>
-                                <connections>
-                                    <segue destination="LTn-vn-IKu" kind="show" id="UKS-g0-7L2"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="BB7-X0-YWn" firstAttribute="top" secondItem="Epa-AN-Qa2" secondAttribute="bottom" constant="30" id="H7J-lN-q3m"/>
-                            <constraint firstAttribute="trailing" secondItem="hkT-sY-1qU" secondAttribute="trailing" constant="20" id="JoD-AP-rKL"/>
                             <constraint firstItem="8vn-gX-UE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sve-sH-k6J"/>
                             <constraint firstItem="8vn-gX-UE5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WFR-OT-2kM"/>
                             <constraint firstItem="Epa-AN-Qa2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6M-0U-Jtc"/>
                             <constraint firstItem="BB7-X0-YWn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJd-3W-cc3"/>
                             <constraint firstItem="Epa-AN-Qa2" firstAttribute="top" secondItem="8vn-gX-UE5" secondAttribute="bottom" constant="30" id="e9e-BQ-Gix"/>
-                            <constraint firstItem="hkT-sY-1qU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tLU-lp-Cu3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8vn-gX-UE5" secondAttribute="trailing" constant="20" id="wis-hY-U3C"/>
                         </constraints>
                     </view>
@@ -88,31 +62,10 @@
             </objects>
             <point key="canvasLocation" x="630.28169014084506" y="-396.18320610687022"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Mlx-qL-AhN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BRW-2Y-eop" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HdZ-31-W0r">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="32"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gW1-Xk-3Q0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gg-ja-Fh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-120.42253521126761" y="-396.18320610687022"/>
-        </scene>
     </scenes>
     <resources>
         <image name="01.square.fill" catalog="system" width="128" height="114"/>
         <image name="50.square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
