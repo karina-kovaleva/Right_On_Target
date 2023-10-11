@@ -11,9 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBOutlet var slider: UISlider!
-    
-    lazy var secondViewController: SecondViewController = getSecondViewController()
-    
+
     // hidden number
     var number: Int = 0
     
@@ -52,6 +50,7 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         print("viewDidDisappear")
     }
+    
     @IBAction func checkNumber() {
         let numslider = Int(self.slider.value.rounded())
         if numslider > self.number {
@@ -74,15 +73,5 @@ class ViewController: UIViewController {
         }
         self.number = Int.random(in: 1...50)
         self.label.text = String(self.number)
-    }
-    
-    @IBAction func showNextScreen() {
-        self.present(self.secondViewController, animated: true)
-    }
-
-    private func getSecondViewController() -> SecondViewController {
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController = storyboard.instantiateViewController(identifier: "SecondViewController")
-    return viewController as! SecondViewController
     }
 }

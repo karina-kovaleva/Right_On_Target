@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BRW-2Y-eop">
     <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -15,22 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="NoO-1v-Chk">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp8-ah-Q5a">
-                                <rect key="frame" x="389.33333333333331" y="179" width="73.333333333333314" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                                <connections>
-                                    <action selector="hideCurrentScene" destination="LTn-vn-IKu" eventType="touchUpInside" id="2ap-up-uPH"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Xa9-rq-FTK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="vp8-ah-Q5a" firstAttribute="centerX" secondItem="NoO-1v-Chk" secondAttribute="centerX" id="MZh-IJ-HuT"/>
-                            <constraint firstItem="vp8-ah-Q5a" firstAttribute="centerY" secondItem="NoO-1v-Chk" secondAttribute="centerY" id="SZm-KS-S8N"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w6z-uA-sg2"/>
                 </viewController>
@@ -74,7 +60,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="О программе"/>
                                 <connections>
-                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUd-aC-BQB"/>
+                                    <segue destination="LTn-vn-IKu" kind="show" id="UKS-g0-7L2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,7 +86,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-120" y="-396"/>
+            <point key="canvasLocation" x="630.28169014084506" y="-396.18320610687022"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mlx-qL-AhN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BRW-2Y-eop" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HdZ-31-W0r">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gW1-Xk-3Q0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gg-ja-Fh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120.42253521126761" y="-396.18320610687022"/>
         </scene>
     </scenes>
     <resources>
