@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.game = Game(minSecretValue: 1, maxSecretValue: 50, rounds: 5)
+        let generatorValue = NumberGenerator(minValue: 1, maxValue: 50)!
+        self.game = Game(valueGenerator: generatorValue, rounds: 5)
         self.game.startNewRound()
         self.updateLabelWithSecretValue(newSecretValue: self.game.currentSecretValue)
     }
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
     // MARK: - Взаимодействие View - Model
     
     @IBAction func checkNumber() {
-        self.game.calculateScore(with: Int(slider.value))
+        self.game.currentRound.calculateScore(with: Int(self.slider.value))
         if self.game.isGameEnded {
             self.showAlert(with: self.game.score)
             self.game.restartGame()

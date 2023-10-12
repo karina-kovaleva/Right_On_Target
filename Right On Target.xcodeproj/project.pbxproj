@@ -14,6 +14,8 @@
 		02C768AD2AD5292000D5F5D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C768AC2AD5292000D5F5D8 /* Assets.xcassets */; };
 		02C768B02AD5292000D5F5D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C768AE2AD5292000D5F5D8 /* LaunchScreen.storyboard */; };
 		02C768BD2AD6D0EB00D5F5D8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C768BC2AD6D0EB00D5F5D8 /* Game.swift */; };
+		02C768BF2AD7BBF100D5F5D8 /* NumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C768BE2AD7BBF100D5F5D8 /* NumberGenerator.swift */; };
+		02C768C12AD7BD5000D5F5D8 /* GameRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C768C02AD7BD5000D5F5D8 /* GameRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		02C768AF2AD5292000D5F5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02C768B12AD5292000D5F5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C768BC2AD6D0EB00D5F5D8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		02C768BE2AD7BBF100D5F5D8 /* NumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGenerator.swift; sourceTree = "<group>"; };
+		02C768C02AD7BD5000D5F5D8 /* GameRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				02C768BC2AD6D0EB00D5F5D8 /* Game.swift */,
+				02C768BE2AD7BBF100D5F5D8 /* NumberGenerator.swift */,
+				02C768C02AD7BD5000D5F5D8 /* GameRound.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 				02C768A82AD5291F00D5F5D8 /* ViewController.swift in Sources */,
 				02C768A42AD5291F00D5F5D8 /* AppDelegate.swift in Sources */,
 				02C768A62AD5291F00D5F5D8 /* SceneDelegate.swift in Sources */,
+				02C768C12AD7BD5000D5F5D8 /* GameRound.swift in Sources */,
+				02C768BF2AD7BBF100D5F5D8 /* NumberGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "kovaleva.Right-On-Target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -339,7 +347,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "kovaleva.Right-On-Target";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
